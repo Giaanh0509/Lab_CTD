@@ -560,7 +560,7 @@ int scan(char *fileName)
 
 int main()
 {
-  if (scan("test/example1.kpl") == IO_ERROR)
+  if (scan("test/example3.kpl") == IO_ERROR)
   {
     printf("Can\'t read input file!\n");
   }
