@@ -340,7 +340,6 @@ Token *getToken(void)
     state = 0;
     return makeToken(SB_LSEL, lineNo, colNo - 2);
   case 37:
-    free(token);
     readChar();
     while(charCodes[currentChar] != CHAR_TIMES && charCodes[currentChar] != SB_RPAR) {
       readChar();
@@ -563,7 +562,11 @@ int scan(char *fileName)
 
 int main()
 {
+<<<<<<< HEAD
   if (scan("test/exampleA0.kpl") == IO_ERROR)
+=======
+  if (scan("test/example2.kpl") == IO_ERROR)
+>>>>>>> 6ea19c7ab299c3b68dfe8f74b53bef2fc3c0699d
   {
     printf("Can\'t read input file!\n");
   }
