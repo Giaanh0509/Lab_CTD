@@ -308,7 +308,10 @@ Token *getToken(void)
     state = 0;
     return token;
   case 34:
+    state = 0;
     error(ERR_INVALIDCHARCONSTANT, lineNo, colNo - 2);
+    readChar();
+    return token;
   case 35: 
     ln = lineNo;
     cn = colNo;
@@ -560,7 +563,7 @@ int scan(char *fileName)
 
 int main()
 {
-  if (scan("test/example3.kpl") == IO_ERROR)
+  if (scan("test/exampleA0.kpl") == IO_ERROR)
   {
     printf("Can\'t read input file!\n");
   }
