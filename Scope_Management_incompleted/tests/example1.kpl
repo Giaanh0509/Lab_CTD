@@ -1,0 +1,5 @@
+Program Test;
+Function GetSum(b: Integer): Integer;
+Begin
+  GetSum := 'Hello';
+End;
