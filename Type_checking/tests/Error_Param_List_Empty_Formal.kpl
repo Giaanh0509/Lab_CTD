@@ -1,0 +1,8 @@
+Program EPLEF;
+procedure Proc;
+begin
+end;
+
+begin
+  call Proc(10);  (* Lỗi: Thủ tục 'Proc' không nhận tham số nào nhưng lại truyền một đối số *)
+end.

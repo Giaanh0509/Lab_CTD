@@ -1,0 +1,8 @@
+Program EPLEA;
+procedure Proc(a: integer);
+begin
+end;
+
+begin
+  call Proc;
+end.
