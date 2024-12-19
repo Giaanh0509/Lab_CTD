@@ -1,9 +1,4 @@
-Program EAD;
-type
-  Arr = array (. 10 .) of integer;
-var
-  a: Arr;
-  b: integer;
+PROGRAM INVALIDCONSTANT;
+const x = - 'A';
 begin
-  b := a(.5, 6.);  
 end.
