@@ -45,8 +45,7 @@ struct ErrorMessage errors[32] = {
   {ERR_UNDECLARED_PROCEDURE, "Undeclared procedure."},
   {ERR_DUPLICATE_IDENT, "Duplicate identifier."},
   {ERR_TYPE_INCONSISTENCY, "Type inconsistency"},
-  {ERR_PARAMETERS_ARGUMENTS_INCONSISTENCY, "The number of arguments and the number of parameters are inconsistent."},
-  {ERR_PARAMETERS_NO, "The number of arguments no"}
+  {ERR_PARAMETERS_ARGUMENTS_INCONSISTENCY, "The number of arguments and the number of parameters are inconsistent."}
 };
 
 void error(ErrorCode err, int lineNo, int colNo) {
