@@ -1,4 +1,3 @@
-
 /* Scanner
  * @copyright (c) 2008, Hedspi, Hanoi University of Technology
 */
@@ -72,7 +71,7 @@ Token* getToken(void)
 			case CHAR_EQ:
 				state = 19;
 				break;
-			case CHAR_EXCLAMATION:
+			case CHAR_EXCLAIMATION:
 				state = 20;
 				break;
 			case CHAR_COMMA:
@@ -372,6 +371,7 @@ Token* getValidToken(void) {
 	}
 	return token;
 }
+
 
 
 /******************************************************************/
