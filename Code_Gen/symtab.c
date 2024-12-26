@@ -37,6 +37,7 @@ Type* makeCharType(void) {
   Type* type = (Type*) malloc(sizeof(Type));
   type->typeClass = TP_CHAR;
   return type;
+  
 }
 
 Type* makeArrayType(int arraySize, Type* elementType) {
