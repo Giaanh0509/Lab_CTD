@@ -218,7 +218,9 @@ ConstantValue* compileUnsignedConstant(void) {
     break;
   case TK_IDENT:
     eat(TK_IDENT);
+    
     // check if the constant identifier is declared
+
     obj = checkDeclaredConstant(currentToken->string);
     if (obj != NULL)
         constValue = duplicateConstantValue(obj->constAttrs->value);
