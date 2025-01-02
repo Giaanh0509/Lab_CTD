@@ -28,6 +28,11 @@ char str[MAX_IDENT_LEN];
 char c;
 /***************************************************************/
 
+void toUpperCase(char* str) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        str[i] = toupper(str[i]);
+    }
+}
 
 Token* getToken(void)
 {
@@ -131,6 +136,7 @@ Token* getToken(void)
 		return getToken();
 	}
 	case 4:
+	    toUpperCase(str);
 		token->tokenType = checkKeyword(str);
 		if (token->tokenType == TK_NONE) state = 5; else state = 6;
 		return getToken();

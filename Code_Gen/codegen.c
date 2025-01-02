@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include "reader.h"
 #include "codegen.h"  
+#include "error.h"  
 
 #define CODE_SIZE 10000
 extern SymTab* symtab;
@@ -20,11 +21,16 @@ extern Object* writelnProcedure;
 CodeBlock* codeBlock;
 
 void genVariableAddress(Object* var) {
-  // TODO
+  int level = 0;
+  int offset = VARIABLE_OFFSET(var);
+  genLA(level, offset);
 }
 
 void genVariableValue(Object* var) {
-  // TODO
+
+  int level = 0;
+  int offset = VARIABLE_OFFSET(var);
+  genLV(level, offset);
 }
 
 int isPredefinedFunction(Object* func) {

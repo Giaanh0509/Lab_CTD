@@ -562,11 +562,7 @@ int scan(char *fileName)
 
 int main()
 {
-<<<<<<< HEAD
-  if (scan("test/exampleA0.kpl") == IO_ERROR)
-=======
   if (scan("test/example2.kpl") == IO_ERROR)
->>>>>>> 6ea19c7ab299c3b68dfe8f74b53bef2fc3c0699d
   {
     printf("Can\'t read input file!\n");
   }

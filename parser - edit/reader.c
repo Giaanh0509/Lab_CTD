@@ -18,21 +18,19 @@ int readChar(void) {
     lineNo ++;
     colNo = 0;
   }
+  //printf("\n%c",currentChar);
   return currentChar;
 }
 
 int openInputStream(char *fileName) {
   inputStream = fopen(fileName, "rt");
-  if (inputStream == NULL) {
+  if (inputStream == NULL)
     return IO_ERROR;
-  } 
-
   lineNo = 1;
   colNo = 0;
   readChar();
   return IO_SUCCESS;
 }
-
 
 void closeInputStream() {
   fclose(inputStream);
