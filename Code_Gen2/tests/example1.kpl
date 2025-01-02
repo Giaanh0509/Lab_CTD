@@ -1,0 +1,11 @@
+program LoopComputation;
+
+Procedure P(i: integer);
+Var 
+  x: integer;
+Begin
+  x := i * 2 + 1;
+End;
+
+begin
+end.
