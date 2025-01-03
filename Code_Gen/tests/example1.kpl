@@ -1,8 +1,7 @@
-program LoopComputation;
-
-var j : Integer;
-    i : Integer;
-
+Program Codegen3;    
+Var a : Integer;b:integer;c:integer;
 begin
-    j:= 1;      
+a:=1;
+b:=9;
+if a!=b then c:=10 else c:=5;
 end.
